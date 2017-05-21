@@ -1,0 +1,46 @@
+/* I don't understand how the code is working and connecting to the HTML file. I really tried, but I didn't understand w3school and what the css was doing. */
+* {
+    box-sizing: border-box;
+}
+article,
+aside,
+header,
+/* I can't get the two to seprate */
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+/* I can't get the list to spread out or to stop looking really bad */
+nav ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* Got it to work, but I don't understand */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* I can't get the display for hourly to go away */
+main div hidden {
+    display: none;
+}
+figcaption,
+footer,
+figure {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+}
