@@ -2,27 +2,23 @@
 * {
     box-sizing: border-box;
 }
-article,
-aside,
-header,
 /* I can't get the two to seprate */
-.title h1 + h1 {
+.title h1 + h2 {
     text-align: right;
     margin-top: -.7em;
 }
 /* I can't get the list to spread out or to stop looking really bad */
-nav ul {
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
+
 /* Got it to work, but I don't understand */
 main {
     display: flex;
@@ -30,17 +26,41 @@ main {
     align-items: center;
 }
 /* I can't get the display for hourly to go away */
-main div hidden {
+.hourly {
     display: none;
 }
 figcaption,
-footer,
+footer{
+    margin-bottom: 60px;
+}
 figure {
     display: block;
 }
-
+.temp {
+    display: flex;
+    justify-content: center;
+}
+.little_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 body {
     margin: 0;
     padding: 0;
     background-color: salmon;
+}
+
+header {
+
+}
+
+.cur_conditions {
+    display: flex;
+    flex-flow: row;
+}
+
+.cSur_conditions h4{
+    display: none;
+
 }
