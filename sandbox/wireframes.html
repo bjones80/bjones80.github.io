@@ -1,4 +1,4 @@
-<DOCTYPE! HTML>
+<!DOCTYPE HTML>
 <html lang= "en-us">
     <head>
         <meta charset ="utf-8">
@@ -6,26 +6,29 @@
         <meta name="description" content="Convert wireframe to HTML" />
         <!-- Based off this wireframe: https://dribbble.com/shots/978949-Responsive-Wireframe-Templates-GIF/attachments/113429 -->
         <meta name='viewport' content='width=device-width'>
-        <!-- <link rel="stylesheet" href="wireframe.css">-->
+        <link rel="stylesheet" type='text/css' href="wireframe.css">
     </head>
     <body>
         <header>
-            <h1> Wireframes Templates </h1>
-            <nav>
-                <ul>
-                    <li><a href=#>Link 1</a></li>
-                    <li><a href=#>Link 2</a></li>
-                    <li><a href=#>Link 3</a></li>
-                    <li><a href=#>Link 4</a></li>
-                </ul>
-            </nav>
+            <div class = 'top'>
+                <div class = 'logo'>
+                    <img src="http://lorempixel.com/400/200" alt="logo" height='70' width='70'>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href=#>Link 1</a></li>
+                        <li><a href=#>Link 2</a></li>
+                        <li><a href=#>Link 3</a></li>
+                        <li><a href=#>Link 4</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <!-- Begin Carousel -->
-            <div class = 'slide'>
-                <img src='http://lorempixel.com/400/200'>
-                <h2>Slide 1 title</h2>
-                <p>This describes the image.</p>
+            <div class = 'slider'>
+                    <h2>Slide 1 title</h2>
+                    <p>This describes the image.</p>
             </div>
             <!-- End Carousel-->
             <!-- Begin Product Gallery
@@ -54,11 +57,11 @@
             <div>
                 <ul>
                     <li class='product'>
-                        <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
-                        <div>
-                            <h2>Product 1 title</h2>
-                            <p>This explains the product</p>
-                        </div>
+                            <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
+                            <div>
+                                <h2>Product 1 title</h2>
+                                <p>This explains the product</p>
+                            </div>
                     </li>
                     <li class='product'>
                         <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
@@ -69,10 +72,33 @@
 
                     </li>
                     <li class='product'>
-
                         <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
                         <div>
                             <h2>Product 3 title</h2>
+                            <p>This explains the product</p>
+                        </div>
+
+                    </li>
+                    <li class='product'>
+                        <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
+                        <div>
+                            <h2>Product 4 title</h2>
+                            <p>This explains the product</p>
+                        </div>
+
+                    </li>
+                    <li class='product'>
+                        <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
+                        <div>
+                            <h2>Product 5 title</h2>
+                            <p>This explains the product</p>
+                        </div>
+
+                    </li>
+                    <li class='product'>
+                        <img src='http://lorempixel.com/400/200' alt='example' height='100' width='200'>
+                        <div>
+                            <h2>Product 6 title</h2>
                             <p>This explains the product</p>
                         </div>
 
@@ -82,7 +108,7 @@
             <!-- End product hover-->
         </main>
         <footer>
-            <div>
+            <div class='end'>
                 <h3>Contact info</h3>
                 <p> info about contact</p>
                 <h3>copy write</h3>

@@ -1,13 +1,12 @@
-/* I don't understand how the code is working and connecting to the HTML file. I really tried, but I didn't understand w3school and what the css was doing. */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
     box-sizing: border-box;
 }
-/* I can't get the two to seprate */
 .title h1 + h2 {
     text-align: right;
     margin-top: -.7em;
 }
-/* I can't get the list to spread out or to stop looking really bad */
+
 nav > ul {
     display: flex;
     justify-content: space-between;
@@ -17,13 +16,21 @@ nav > ul {
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #F07C6C;
+    font-size: 18px;
 }
 
-/* Got it to work, but I don't understand */
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url("/weather/weatherimg/sunny-winter.jpg");
+    background-size: cover;
 }
 /* I can't get the display for hourly to go away */
 .hourly {
@@ -32,6 +39,7 @@ main {
 figcaption,
 footer{
     margin-bottom: 60px;
+    background-color: #A6D8DB;
 }
 figure {
     display: block;
@@ -48,19 +56,31 @@ figure {
 body {
     margin: 0;
     padding: 0;
-    background-color: salmon;
+    font-size: 20px;
 }
 
 header {
-
+    background-color: #A6D8DB;
 }
 
 .cur_conditions {
     display: flex;
     flex-flow: row;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .cSur_conditions h4{
     display: none;
-
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, "second choice", generic-family;
+}
+
