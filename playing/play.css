@@ -30,7 +30,7 @@ h4,
 h5,
 h6 {
     font-family: Sansita, "second choice", generic-family;
-    color: #E14658;
+    color: #22252C;
 }
 /* end body*/
 /* in Header */
@@ -54,10 +54,10 @@ nav > ul {
 
 nav a:link {
     text-decoration: none;
-    color: #00303F;
+    color: #C0B3A0;
 }
 header {
-    background-color: #3F3250;
+    background-color: #C0B3A0;
     height: 100px;
 }
 /* end of header */
@@ -107,15 +107,15 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color:#22252C;
-    /*background-image: url("/sandbox/favorite/IMG_20161027_135302.jpg");
-    background-size: cover;*/
+    background-color:#985E6D;
+    background-image: url("/images/mountains.jpg");
+    background-size: cover;
 }
 /* end MAIN */
 /* In Footer */
 footer{
     margin-bottom: 60px;
-    background-color: #3F3250;
+    background-color: #C0B3A0;
     height: 50px;
 }
 /*end footer*/
