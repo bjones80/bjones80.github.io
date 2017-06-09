@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Weather App | CIT 230 class | Frontend development</title>
+        <meta name="description" content="Short description of the site">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type='text/css' href="trying.css">
+    </head>
+    <body>
+        <header>
+            <h1>Mobile Weather App Site Plan</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Purpose</h2>
+            <p>The client would like a web based weather app created. The purpose of the site is to give current weather conditions in 3 different ways.  The initial landing page will give the weather for the current location based on the Geocoding information given by the browser.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.</p>
+            <h2>Audience</h2>
+            <p>Primary audience is adults ages 18-30.  Most will be students.  Access to the site will be split between mobile devices and laptops.</p>
+            <h3>Audience Goals:</h3>
+            <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.</p>
+            <h2>Personas</h2>
+            <img src="/weather/images/cool-joe.jpg" alt='joe' height='300' width='300'>
+            <ul>
+                <li><b>Name: </b>Joe Cool</li>
+                <li><b>Occupantion: </b>student</li>
+                <li><b>Age: </b>undertermined</li>
+                <li><b>Interests: </b>Traveling, seeing new things</li>
+                <li><b>Motivation: </b>Joe is not into planning.  His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure, has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow).  He would like to be more prepared...without having to put much effort into it...or planning.</li>
+                <li><b>Environment: </b>Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however.  Many of the places he frequents do not have great signal…he is often dealing with 3G speeds</li>
+            </ul>
+            <img src="/weather/images/lucy.jpg" alt='lucy' height='300' width='300'>
+            <ul>
+                <li><b>Name: </b>Lucy van Pelt</li>
+                <li><b>Occupantion: </b>student</li>
+                <li><b>Age: </b>18</li>
+                <li><b>Interests: </b>Giving advice, Psychology</li>
+                <li><b>Motivation: </b>Lucy is a no nonsense young lady who likes to help those around her.  She wants easy access to the weather conditions for many locations so that she can always be prepared to offer some unsolicited advice to her peers.</li>
+                <li><b>Environment: </b>Lucy has a smart phone that she uses to keep her eye on her social media ‘friends’.  She is usually not very far from her trusty laptop however. Most of her time online is spent either on the University network or the apartment broadband.</li>
+            </ul>
+            <h2>Content</h2>
+            <p>All weather pages should include Location name, temperature, high, low, current weather descriptor, precipitation, and wind on small, and hourly temps should be added on larger screens. (See provided weather data file for more details)</p>
+            <h3>Pages</h3>
+            <ol>
+                <li><b>Home: </b>weather for the current location. Current location should be determined by using the Geolocation API of the browser.  This information should be passed to the WeatherUnderground API  (https://www.wunderground.com/weather/api/) to retrieve the current conditions.</li>
+                <li><b>Franklin, Greenville, Springfield: </b>weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.</li>
+                <li><b>Search: </b>Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. The search term from the field should be sent to the WeatherUnderground autocomplete API (https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1), and the results used to pull the current conditions for the selected location.</li>
+            </ol>
+            <h2>Styles</h2>
+            <h3>Branding</h3>
+            <p>The client provided the following initial concept for a name and logo: (You recognize that this logo could easily be re-created entirely with CSS using the right font and HTML entities… &#9856;  &#9861;)</p>
+            <img src="/weather/images/logo-blue.jpg" alt='logo'>
+            <h3>Typography</h3>
+            <p>The client also expressed interest in the following fonts: </p>
+            <p><b>Heading Font: </b>Sansita From Google Fonts</p>
+            <img src="/weather/images/sanita-alphabet.jpg" alt='alphabet'>
+            <img src="/weather/images/sansita-headline.jpg" alt='headline'>
+            <p><b>Body Copy Font: </b>Helvetica</p>
+            <p>A B C Ć Č D Đ E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž a b c č ć d đ e f g h i j k l m n o p q r s š t u v w x y z ž 1 2 3 4 5 6 7 8 9 0 ‘ ? ’ “ ! ” ( % ) [ # ] { @ } / - + ÷ × =  ® © $ € £ ¥ ¢ : ; , . *</p>
+            <p>Lorem ipsum nonsed eicillabore essum fugit lantisit, si nis eictia num fugiam et quatquis resto eossitem quunt quae sit dolupis maio omnimo il id maio bea ipid que conseque volorem. Et facidebit vel ma doluptasitis num, ullandebit hicto beaquos tiumquis postrum cori odit eosam quiatur? Volo quid minvel earuptatem quiatur?</p>
+            <h3>Colors</h3>
+            <img src="/weather/images/primary-swatch.png" alt='primary'><img src="/weather/images/secondary-swatch.png" alt='secondary'><img src="/weather/images/accent1-swatch.png" alt='accent1'><img src="/weather/images/accent2-swatch.png" alt='accent2'>
+            <p>Primary: #A6D8DB   Secondary: #F07C6C    Accent1: #E7EF61      Accent2: #47556F </p>
+            <h3>Elements</h3>
+            <p>(add usability note on each element)</p>
+            <p><b>Navigation:</b></p>
+            <img src="/weather/images/nav-bar.jpg" alt='nav'>
+            <p>Link:normal : #4A4653</p>
+            <p>Link:visited : #4A4653</p>
+            <p>Link:hover :  #E7EF61</p>
+            <p>Link:active :  #A6D8DB</p>
+            <p><b>Opaque rounded content box:</b></p>
+            <img src="/weather/images/rounded-example.jpg" alt='rounded' height='178' width='386'>
+            <p>background-color: rgba(200,200,200,.6);</p>
+            <p>margin: .2em auto;</p>
+            <p>border: 1px solid;</p>
+            <p>border-radius: 5px;</p>
+            <h2>Wireframes</h2>
+            <h3>Small screen</h3>
+            <img src="/weather/images/wireframe-sm.png" alt='wireframe'>
+            <h3>Large Screen</h3>
+            <img src="/weather/images/wireframe-lg.jpg" alt='wireframe' height='452' width='700'>
+            <h2>Greenville</h2>
+            <p>This is my new web page design.</p>
+            <h3>Moble</h3>
+            <img src="images/moble-new-design.PNG" alt='WireframeNew'>
+            <h3>Web</h3>
+            <img src="images/web-new-design.PNG" alt='webwireframe'>
+            <p>I had Lynnette look at them and she said they look really good.</p>
+            <section class="body-font">
+                <h3>Body Copy Font: Montserrat</h3>
+                <p>A B C Ć Č D Đ E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž a b c č ć d đ e f g h i j k l m n o p q r s š t u v w x y z ž 1 2 3 4 5 6 7 8 9 0 ‘ ? ’ “ ! ” ( % ) [ # ] { @ } : ; , . *</p>
+                <p>Lorem ipsum nonsed eicillabore essum fugit lantisit, si nis eictia num fugiam et quatquis resto eossitem quunt quae sit dolupis maio omnimo il id maio bea ipid que conseque volorem. Et facidebit vel ma doluptasitis num, ullandebit hicto beaquos tiumquis postrum cori odit eosam quiatur? Volo quid minvel earuptatem quiatur?</p>
+            </section>
+            <img src="/weather/images/websiteColors.jpg" alt='colorss'>
+            <section class="colors">
+                <div class="color-swatch">
+                    <div class="color-swatch__color color-swatch__primary"></div>
+                    <div class="color-swatch__description">
+                        <h4>Primary</h4>
+                        <small>#687864</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch__color color-swatch__secondary"></div>
+                    <div class="color-swatch__description">
+                        <h4>Secondary</h4>
+                        <small>#8FCIE3</small>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            &copy; 2017 Breena
+        </footer>
+    </body>
+
+</html>
