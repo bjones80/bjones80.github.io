@@ -5,14 +5,33 @@
         <title>Project Home | CIT 230 class | Frontend development</title>
         <meta name="description" content="Short description of the site">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type='text/css' href="bucket_list.css">
+
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+                                         var openDropdown = dropdowns[i];
+                                         if (openDropdown.classList.contains('show')) {
+                                         openDropdown.classList.remove('show');
+                                         }
+                                         }
+
+
     </head>
     <body>
         <header>
-            <h1>Project Home page</h1>
-            <nav>
+            <div class = 'logo'>
+                <img src='/project/logo/logo3-200.png' alt='logo'>
+            </div>
+            <nav class = 'nav'>
                 <ul>
-                    <li><a href="/index.html">Index</a></li>
-                    <li><a href="/project/project-proposal.html">Template</a></li>
                     <li><a href="/project/homepj.html">Home</a></li>
                     <li><a href="/project/mytravels.html">My Travels</a></li>
                     <li><a href="/project/planning.html">Planning</a></li>
@@ -22,11 +41,135 @@
             </nav>
         </header>
         <main>
-            <h2>This is my Home Page</h2>
-            <p>On this page, I would put a brief description of my travels and why my bucket list is important. I would then list a several different types of bucket List. For example, I would do one for when I am home in Wyoming and what I would do there. I would also like one for places I would like to travel in the US, Road Trips, International, Family trips, basically I would like to split my bucket list into subcategories.</p>
+            <div class = 'temple'>
+                <h2>Go to Every Temple in the US</h2>
+            </div>
+            <div class = 'state'>
+                <h2>Go to Every state</h2>
+                <div class="dropdown">
+                <ul>
+                    <li>Washington</li>
+                    <li>Oregon</li>
+                    <li>California</li>
+                    <li>Idaho</li>
+                    <li>Nevada</li>
+                    <li>Montana</li>
+                    <li>Wyoming</li>
+                    <li>Utah</li>
+                    <li>Arizona</li>
+                    <li>New Mexico</li>
+                    <li>Colorado</li>
+                    <li>Nebraska</li>
+                    <li>Iowa</li>
+                    <li>Missouri</li>
+                    <li>Florida</li>
+                    <li>Texas</li>
+                    <h2>Haven't Been Too</h2>
+                    <li>Alabama</li>
+                    <li>Alaska</li>
+                    <li>Arkansas</li>
+                    <li>Connecticut</li>
+                    <li>Delaware</li>
+                    <li>Georgia</li>
+                    <li>Hawaii</li>
+                    <li>Illinois</li>
+                    <li>Indiana</li>
+                    <li>Kansas</li>
+                    <li>Kentucky</li>
+                    <li>Louisiana</li>
+                    <li>Maine</li>
+                    <li>Maryland</li>
+                    <li>Massachusetts</li>
+                    <li>Michigan</li>
+                    <li>Minnesota</li>
+                    <li>Mississippi</li>
+                    <li>Missouri</li>
+                    <li>New Hampshire</li>
+                    <li>New Jersey</li>
+                    <li>New York </li>
+                    <li>North Carolina</li>
+                    <li>North Dakota</li>
+                    <li>Ohio</li>
+                    <li>Oklahoma</li>
+                    <li>Pennsylvania</li>
+                    <li>Rhode Island</li>
+                    <li>South Carolina</li>
+                    <li>South Dakota</li>
+                    <li>Tennessee</li>
+                    <li>Vermont</li>
+                    <li>Virginia</li>
+                    <li>West Virginia</li>
+                    <li>Wisconsin</li>
+                    <img src='/project/images/Fall_Trees-400.jpg' alt='example'>
+                </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class = 'amusement'>
+                <h2>Amusement Parks</h2>
+                <ul>
+                    <li>Walt Disney World</li>
+                    <li>Knotts Berry Farm</li>
+                    <li>Sea World</li>
+                    <h2>Haven't Been Too</h2>
+                    <li>Cedar Point</li>
+                    <li>Knoebels</li>
+                    <li>Schiltter Bahn Water Park</li>
+                    <li>Universal's Islands of Adventure</li>
+                    <li>Six Flags Magic Mountain</li>
+                    <li>Kings Island</li>
+                    <li>Dells Water Park</li>
+                    <li>Hershey Park</li>
+                    <li>Harry Potter Land</li>
+                    <img src='/project/images/sunrise-sunset-400.jpg' alt='example'>
+                </ul>
+            </div>
+            <div class = 'national'>
+                <h2>National Parks</h2>
+                <ul>
+                    <li>Yellowstone</li>
+                    <li>Grand Canyon</li>
+                    <li>Grand Teton</li>
+                    <h2>Haven't Been Too</h2>
+                    <li>Yosemite</li>
+                    <li>Great Smoky Mountains</li>
+                    <li>Rock Mountain</li>
+                    <li>Zion</li>
+                    <li>Olympic</li>
+                    <li>Acadia</li>
+                    <li>Glacier</li>
+                    <img src='/project/images/Great-Mountains-400.jpg' alt='example'>
+                </ul>
+            </div>
+            <div class = 'international'>
+                <h2>International Traviling</h2>
+                <ul>
+                    <li>London England Temple</li>
+                    <li>Luxembourg</li>
+                    <li>Paris France</li>
+                    <li>Iceland</li>
+                    <li>South Africa</li>
+                    <li>Mexico</li>
+                    <li>Cruise</li>
+                    <img src='/project/images/Beautiful-Mountain-400.jpg' alt='example'>
+                </ul>
+            </div>
         </main>
         <footer>
-            &copy; 2017 Breena
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Index</a></li>
+                    <li><a href="/project/project-proposal.html">Template</a></li>
+                </ul>
+                &copy; 2017 Breena
+            </nav>
         </footer>
     </body>
 

@@ -1,0 +1,180 @@
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display:block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+h1,
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #F7F9FB;
+    font-size: 27px;
+}
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 33px;
+}
+/* end body */
+/* in Header */
+.logo h1 + h2 {
+    text-align: right;
+    margin-top: -.7em;
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5085A5;
+    font-size: 20px;
+    height: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+}
+nav a:link {
+    text-decoration: none;
+    color: #F7F9FB;
+    text-align: center;
+}
+header {
+    background-color: #687864;
+    height: 120px;
+}
+/* end of header */
+/* In MAIN under SECTION CLASS = conditions */
+.city {
+    display: flex;
+    justify-content: center;
+
+}
+.date {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.temp {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 70px;
+}
+.wind {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.rain {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+/* end MAIN under SECTION CLASS = cSur_conditions */
+/* In MAIN under SECTION CLASS = HOURLY */
+.hourly {
+    display: none;
+}
+
+/* end MAIN under SECTION CLASS = HOURLY */
+/* MAIN */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("/weather/images/background/faded-background.png");
+    /*background-image: url("/weather/images/background/lochsa-morning-idaho-scenic-images-linda-lantzy.jpg"); */
+    /*background-image: url("/weather/images/background/Fall-Creek-Falls-and-Snake-River-Idaho-sm.jpg");*/
+    background-size: cover;
+}
+
+/* end MAIN */
+/* In Footer */
+footer{
+    margin-bottom: 30px;
+    background-color: #687864;
+    height: 50px;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+}
+.home {
+    display: flex;
+    justify-content: flex-end;
+}
+.home a:link {
+    text-decoration: none;
+    color: #F7F9FB;
+    text-align: center;
+}
+/*end footer*/
+
+/* media to convert from big to small */
+@media (min-width: 550px) {
+    .hourly {
+        display: block;
+/*        display: flex;*/
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .hourly ul li {
+        display: flex;
+        justify-content: space-around;
+        padding: .8em;
+    }
+    .hourly > ul {
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 12em;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .conditions {
+        width: 100%;
+    }
+
+    main {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+
+    }
+}
+@media (min-width: 360px) {
+    h1,
+    h2{
+        font-size: 35px;
+    }
+    nav > ul {
+        height: 30px;
+    }
+
+}
