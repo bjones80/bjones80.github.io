@@ -6,24 +6,6 @@
         <meta name="description" content="Short description of the site">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type='text/css' href="bucket_list.css">
-
-        function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-                                         var openDropdown = dropdowns[i];
-                                         if (openDropdown.classList.contains('show')) {
-                                         openDropdown.classList.remove('show');
-                                         }
-                                         }
-
-
     </head>
     <body>
         <header>
@@ -41,125 +23,130 @@
             </nav>
         </header>
         <main>
-            <div class = 'temple'>
-                <h2>Go to Every Temple in the US</h2>
-            </div>
-            <div class = 'state'>
-                <h2>Go to Every state</h2>
-                <div class="dropdown">
-                <ul>
-                    <li>Washington</li>
-                    <li>Oregon</li>
-                    <li>California</li>
-                    <li>Idaho</li>
-                    <li>Nevada</li>
-                    <li>Montana</li>
-                    <li>Wyoming</li>
-                    <li>Utah</li>
-                    <li>Arizona</li>
-                    <li>New Mexico</li>
-                    <li>Colorado</li>
-                    <li>Nebraska</li>
-                    <li>Iowa</li>
-                    <li>Missouri</li>
-                    <li>Florida</li>
-                    <li>Texas</li>
-                    <h2>Haven't Been Too</h2>
-                    <li>Alabama</li>
-                    <li>Alaska</li>
-                    <li>Arkansas</li>
-                    <li>Connecticut</li>
-                    <li>Delaware</li>
-                    <li>Georgia</li>
-                    <li>Hawaii</li>
-                    <li>Illinois</li>
-                    <li>Indiana</li>
-                    <li>Kansas</li>
-                    <li>Kentucky</li>
-                    <li>Louisiana</li>
-                    <li>Maine</li>
-                    <li>Maryland</li>
-                    <li>Massachusetts</li>
-                    <li>Michigan</li>
-                    <li>Minnesota</li>
-                    <li>Mississippi</li>
-                    <li>Missouri</li>
-                    <li>New Hampshire</li>
-                    <li>New Jersey</li>
-                    <li>New York </li>
-                    <li>North Carolina</li>
-                    <li>North Dakota</li>
-                    <li>Ohio</li>
-                    <li>Oklahoma</li>
-                    <li>Pennsylvania</li>
-                    <li>Rhode Island</li>
-                    <li>South Carolina</li>
-                    <li>South Dakota</li>
-                    <li>Tennessee</li>
-                    <li>Vermont</li>
-                    <li>Virginia</li>
-                    <li>West Virginia</li>
-                    <li>Wisconsin</li>
-                    <img src='/project/images/Fall_Trees-400.jpg' alt='example'>
-                </ul>
+            <div class="temple">
+                <button class="droptm">Temples In the USA</button>
+                <div class="dropdown-temple">
+                    <a href="#">Rexburg</a>
+                    <a href="#">Idaho Falls</a>
+                    <a href="#">Salt Lake</a>
+                    <a href="#">Provo</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="temple_img">
+                <img src='/project/images/Beautiful-Mountain-400.jpg' alt='mountains'>
+            </div>
+            <div class="state">
+                <button class="dropst">Vist Every State</button>
+                <div class="dropdown-state">
+                    <a href="#">Washington</a>
+                    <a href="#">Oregon</a>
+                    <a href="#">California</a>
+                    <a href="#">Idaho</a>
+                    <a href="#">Nevada</a>
+                    <a href="#">Montana</a>
+                    <a href="#">Wyoming</a>
+                    <a href="#">Utah</a>
+                    <a href="#">Arizona</a>
+                    <a href="#">New Mexico</a>
+                    <a href="#">Colorado</a>
+                    <a href="#">Nebraska</a>
+                    <a href="#">Iowa</a>
+                    <a href="#">Missouri</a>
+                    <a href="#">Florida</a>
+                    <a href="#">Texas</a>
+                    <a href="#">Alabama</a>
+                    <a href="#">Alaska</a>
+                    <a href="#">Arkansas</a>
+                    <a href="#">Connecticut</a>
+                    <a href="#">Delaware</a>
+                    <a href="#">Georgia</a>
+                    <a href="#">Hawaii</a>
+                    <a href="#">Illinois</a>
+                    <a href="#">Indiana</a>
+                    <a href="#">Kansas</a>
+                    <a href="#">Kentucky</a>
+                    <a href="#">Louisiana</a>
+                    <a href="#">Maine</a>
+                    <a href="#">Maryland</a>
+                    <a href="#">Massachusetts</a>
+                    <a href="#">Michigan</a>
+                    <a href="#">Minnesota</a>
+                    <a href="#">Mississippi</a>
+                    <a href="#">Missouri</a>
+                    <a href="#">New Hampshire</a>
+                    <a href="#">New Jersey</a>
+                    <a href="#">New York </a>
+                    <a href="#">North Carolina</a>
+                    <a href="#">North Dakota</a>
+                    <a href="#">Ohio</a>
+                    <a href="#">Oklahoma</a>
+                    <a href="#">Pennsylvania</a>
+                    <a href="#">Rhode Island</a>
+                    <a href="#">South Carolina</a>
+                    <a href="#">South Dakota</a>
+                    <a href="#">Tennessee</a>
+                    <a href="#">Vermont</a>
+                    <a href="#">Virginia</a>
+                    <a href="#">West Virginia</a>
+                    <a href="#">Wisconsin</a>
                 </div>
             </div>
-            <div class = 'amusement'>
-                <h2>Amusement Parks</h2>
-                <ul>
-                    <li>Walt Disney World</li>
-                    <li>Knotts Berry Farm</li>
-                    <li>Sea World</li>
-                    <h2>Haven't Been Too</h2>
-                    <li>Cedar Point</li>
-                    <li>Knoebels</li>
-                    <li>Schiltter Bahn Water Park</li>
-                    <li>Universal's Islands of Adventure</li>
-                    <li>Six Flags Magic Mountain</li>
-                    <li>Kings Island</li>
-                    <li>Dells Water Park</li>
-                    <li>Hershey Park</li>
-                    <li>Harry Potter Land</li>
-                    <img src='/project/images/sunrise-sunset-400.jpg' alt='example'>
-                </ul>
+            <div class="state_img">
+                <img src='/project/images/Fall_Trees-400.jpg' alt='trees'>
             </div>
-            <div class = 'national'>
-                <h2>National Parks</h2>
-                <ul>
-                    <li>Yellowstone</li>
-                    <li>Grand Canyon</li>
-                    <li>Grand Teton</li>
-                    <h2>Haven't Been Too</h2>
-                    <li>Yosemite</li>
-                    <li>Great Smoky Mountains</li>
-                    <li>Rock Mountain</li>
-                    <li>Zion</li>
-                    <li>Olympic</li>
-                    <li>Acadia</li>
-                    <li>Glacier</li>
-                    <img src='/project/images/Great-Mountains-400.jpg' alt='example'>
-                </ul>
+            <div class="amusement">
+                <button class="dropam">Amusement Parks</button>
+                <div class="dropdown-amusement">
+                    <a href="#">Walt Disney World</a>
+                    <a href="#">Knotts Berry Farm</a>
+                    <a href="#">Sea World</a>
+                    <a href="#">Cedar Point</a>
+                    <a href="#">Knoebels</a>
+                    <a href="#">Schiltter Bahn Water Park</a>
+                    <a href="#">Universal's Islands of Adventure</a>
+                    <a href="#">Six Flags Magic Mountain</a>
+                    <a href="#">Kings Island</a>
+                    <a href="#">Dells Water Park</a>
+                    <a href="#">Hershey Park</a>
+                    <a href="#">Harry Potter Land</a>
+
+                </div>
             </div>
-            <div class = 'international'>
-                <h2>International Traviling</h2>
-                <ul>
-                    <li>London England Temple</li>
-                    <li>Luxembourg</li>
-                    <li>Paris France</li>
-                    <li>Iceland</li>
-                    <li>South Africa</li>
-                    <li>Mexico</li>
-                    <li>Cruise</li>
-                    <img src='/project/images/Beautiful-Mountain-400.jpg' alt='example'>
-                </ul>
+            <div class='amusement_img'>
+                <img src='/project/images/Great-Mountains-400.jpg' alt='mount'>
+            </div>
+            <div class="national">
+                <button class="dropna">National Parks</button>
+                <div class="dropdown-national">
+                    <a href="#">Yellowstone</a>
+                    <a href="#">Grand Canyon</a>
+                    <a href="#">Grand Teton</a>
+                    <a href="#">Yosemite</a>
+                    <a href="#">Great Smoky Mountains</a>
+                    <a href="#">Rock Mountain</a>
+                    <a href="#">Zion</a>
+                    <a href="#">Olympic</a>
+                    <a href="#">Acadia</a>
+                    <a href="#">Glacier</a>
+                </div>
+            </div>
+            <div class='national_img'>
+                <img src='/project/images/sunrise-sunset-400.jpg'>
+            </div>
+            <div class="international">
+                <button class="dropin">International Traveling</button>
+                <div class="dropdown-international">
+                    <a href="#">London England Temple</a>
+                    <a href="#">Luxembourg</a>
+                    <a href="#">Paris France</a>
+                    <a href="#">Iceland</a>
+                    <a href="#">South Africa</a>
+                    <a href="#">Mexico</a>
+                    <a href="#">Cruise</a>
+                </div>
+            </div>
+            <div class='international_img'>
+                <img src='/project/images/sunrise-sunset-400.jpg'>
             </div>
         </main>
         <footer>
