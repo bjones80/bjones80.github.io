@@ -67,6 +67,10 @@ function getShipDetails(url) {
     //call getJSON functions for the provieded url
     getJSON(url).then(function(data) {
         console.log(data);
+        document.querySelector('.name').innerHTML = data.name;
+        document.querySelector('.model').innerHTML=data.model;
+        document.querySelector('.class').innerHTML=data.starship_class;
+        document.getElementById('detailsbox').classList.remove('hidden');
     //with the results populate the elements in the #detailsbox
     });
 }

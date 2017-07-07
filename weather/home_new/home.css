@@ -1,0 +1,150 @@
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display:block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1,
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #F7F9FB;
+    font-size: 27px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 33px;
+    display: flex;
+    justify-content: space-around;
+}
+/* end body */
+
+
+
+/* in Header */
+.logo h1 + h2 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5085A5;
+    font-size: 20px;
+    height: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #F7F9FB;
+    text-align: center;
+}
+
+header {
+    background-color: #687864;
+    height: 120px;
+}
+/* end of header */
+
+
+
+/* In MAIN under SECTION CLASS = conditions */
+section > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    height: 250px;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("/weather/images/background/faded-background.png");
+    /*background-image: url("/weather/images/background/lochsa-morning-idaho-scenic-images-linda-lantzy.jpg"); */
+    /*background-image: url("/weather/images/background/Fall-Creek-Falls-and-Snake-River-Idaho-sm.jpg");*/
+    background-size: cover;
+}
+/* end MAIN */
+
+
+
+/* In Footer */
+footer{
+    margin-bottom: 30px;
+    background-color: #687864;
+    height: 50px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home a:link {
+    text-decoration: none;
+    color: #F7F9FB;
+    text-align: center;
+}
+/*end footer*/
+
+
+
+/* media to convert from big to small */
+@media (min-width: 550px) {
+
+@media (min-width: 360px) {
+    h1,
+    h2{
+        font-size: 35px;
+    }
+    nav > ul {
+        height: 30px;
+    }
+
+}

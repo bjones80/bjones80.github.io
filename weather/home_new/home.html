@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang= "en-us">
+    <head>
+        <meta charset ="utf-8">
+        <title>Home | CIT 230 class | Frontend development</title>
+        <meta name="description" content="Convert wireframe to HTML" />
+        <!-- Based off this wireframe: https://byui-cit.github.io/cit230/images/planning/wireframe-lg.png -->
+        <meta name='viewport' content='width=device-width'>
+        <link rel="stylesheet" type='text/css' href="home.css">
+    </head>
+    <body>
+        <header>
+                <div class="logo">
+                    <h1><span >&#9856;</span><span >&#9861;</span> Feeling Lucky?</h1>
+                    <h2>Local Weather</h2>
+                </div>
+             <nav>
+                    <ul>
+                        <li><a href='/weather/home_new/home.html'> Home </a></li>
+                        <li><a href='/weather/franklin.html'> Franklin </a></li>
+                        <li><a href='/weather/greenville.html'> Greenville </a></li>
+                        <li><a href=#> Springfield </a></li>
+                        <li><a href=#> Search </a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="weather-container">
+                <div id="cover">
+                    <div id="status">Loading...</div>
+                </div>
+                <h3 id="cityDisplay"></h3>
+                <h3>Current Conditions</h3>
+                <ul id="current_conditions">
+                    <li id="currentTemp"></li>
+                    <li id="summary"></li>
+                    <li id="add1"></li>
+                    <li id="add2"></li>
+                    <li id="add3"></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class = 'copyright'>
+                &copy; 2017 Breena
+            </div>
+            <div class = 'home'>
+                <a href="/index.html">Index</a>
+            </div>
+            <script src="home.js"></script>
+        </footer>
+
+    </body>
+    </html>
