@@ -2,40 +2,107 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Temporary Home Page | CIT 230 class | Frontend development</title>
+        <title>Project Home | CIT 230 class | Frontend development</title>
         <meta name="description" content="Short description of the site">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type='text/css' href="/project/bucket_list.css">
+        <script src='/project/project.js'></script>
     </head>
     <body>
         <header>
-            <h1>Temporary Home page</h1>
-            <nav>
+            <div class = 'logo'>
+                <img src='/project/logo/logo3-200.png' alt='logo'>
+            </div>
+            <nav class = 'nav'>
                 <ul>
-
-                    <li><a href="/homework/mobile-analysis.html">Mobile Analysis</a> </li>
-                    <li><a href="/Poem.html">Poem</a> </li>
-                    <li><a href="/project/project-proposal.html">Project</a></li>
-                    <li><a href="/weather/franklin.html">Franklin</a></li>
-                    <li><a href="sandbox/responsiveNav.html">Responsive Nav</a></li>
-                    <li><a href="weatherapp2.html">Weather</a></li>
-                    <li><a href='/weather/greenville.html'>Greenville</a></li>
-                    <li><a href='/sandbox/adventure/choose_adventure.html'>Adventure</a></li>
-                    <li><a href='/sandbox/starwars/star_wars.html'>Star Wars</a></li>
-                    <li><a href='#'>trile</a></li>
-                    <li><a href="/weather/home_new/home.html">Weather Home</a> </li>
-                    <li><a href="/weather/jsonweather-html/index.html">Testing API</a> </li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/project/mytravels.html">My Travels</a></li>
+                    <li><a href="/project/planning.html">Planning</a></li>
+                    <li><a href="/project/gallery.html">Gallery</a></li>
+                    <li><a href="/project/suggestions.html">Suggestions</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>What we are about.</h2>
-            <h3>Week 12 two links are called: Weather Home and Testing API</h3>
-            <p>A paragraph describing what this site is all about...and what you can expect to see here</p>
+            <div class="temple-container">
+                <button onclick="myTemple()" class="droptm">Temples in the USA</button>
+                <div id="myDropT" class="dropdown-temple">
+                    <a href="/project/mytravels.html">Rexburg</a>
+                    <a href="/project/mytravels.html">Oakland</a>
+                    <a href="/project/mytravels.html">Salt Lake</a>
+                    <a href="/project/mytravels.html">Columbia River</a>
+                    <a href="/project/mytravels.html">Las Vegas</a>
+                    <a href="/project/planning.html">Washington D.C.</a>
+                    <a href="/project/planning.html">Houston</a>
+                    <a href="/project/planning.html">Portland</a>
+                </div>
+            </div>
+                <img src='/project/images/bucket_list/rexburg.jpg' width='300' alt='rexburg'>
+            <div class="things-container">
+                <button onclick="myThings()" class="dropth">Things To Do</button>
+                <div id= "myDropTh" class="dropdown-things">
+                    <a href="/project/mytravels.html">Have a mud fight</a>
+                    <a href="/project/mytravels.html">Go on a hike in the Mountains</a>
+                    <a href="/project/planning.html">To go Star Gazing</a>
+                    <a href="/project/planning.html">Ride in a hot air balloon</a>
+                    <a href="/project/planning.html">Go to a drive-in Movie</a>
+                    <a href="/project/planning.html">Let go of a floating lantern</a>
+                    <a href="/project/planning.html">Throw a dart at a map and travel to wherever it lands</a>
+                    <a href="/project/planning.html">Take my mom on the vacation of her dreams</a>
 
+                </div>
+            </div>
+                <img src='/project/images/bucket_list/floating-lantern.jpg'  alt='lantern'>
+            <div class="amusement-container">
+                <button onClick="myAmusement()" class="dropam">Amusement Parks</button>
+                <div id="myDropA" class="dropdown-amusement">
+                    <a href="/project/mytravels.html">Walt Disney World</a>
+                    <a href="/project/mytravels.html">Walt Disney Land</a>
+                    <a href="/project/mytravels.html">Knotts Berry Farm</a>
+                    <a href="/project/mytravels.html">Sea World</a>
+                    <a href="/project/planning.html">Universal's Islands of Adventure</a>
+                    <a href="/project/planning.html">Six Flags Magic Mountain</a>
+                    <a href="/project/planning.html">Harry Potter Land</a>
+
+                </div>
+            </div>
+                <img src='/project/images/bucket_list/disney-w.jpg' alt='disney'>
+            <div class="national-container">
+                <button onClick="myNational()" class="dropna">National Parks</button>
+                <div id="myDropN" class="dropdown-national">
+                    <a href="/project/mytravels.html">Yellowstone</a>
+                    <a href="/project/mytravels.html">Grand Canyon</a>
+                    <a href="/project/mytravels.html">Grand Teton</a>
+                    <a href="/project/planning.html">Yosemite</a>
+                    <a href="/project/planning.html">Great Smoky Mountains</a>
+                    <a href="/project/planning.html">Rock Mountain</a>
+                    <a href="/project/planning.html">Zion</a>
+                </div>
+            </div>
+                <img src='/project/images/bucket_list/yellowstone.jpg' alt='yellowstone'>
+            <div class="international">
+                <button onClick="myInternational()" class="dropin">International Traveling</button>
+                <div id="myDropI" class="dropdown-international">
+                    <a href="#">London England Temple</a>
+                    <a href="#">Luxembourg</a>
+                    <a href="#">Paris France</a>
+                    <a href="#">Iceland</a>
+                    <a href="#">Cape Town</a>
+                    <a href="#">Mexico City</a>
+                    <a href="#">Cruise</a>
+                </div>
+            </div>
+                <img src='/project/images/bucket_list/mom-travel.jpg' alt='travel'>
         </main>
         <footer>
-            &copy; 2017 Breena
+            <nav>
+                <ul>
+                    <li><a href="/hw.html">Index</a></li>
+                    <li><a href="/project/project-proposal.html">Template</a></li>
+                </ul>
+                &copy; 2017 Breena
+            </nav>
+<!--            <script src='project.js'></script>-->
         </footer>
     </body>
-
 </html>

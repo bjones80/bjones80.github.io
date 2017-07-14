@@ -7,33 +7,46 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type='text/css' href="bucket_list.css">
     </head>
-    <body>
+    <body onload="planning()">
         <header>
             <div class = 'logo'>
                 <img src='/project/logo/logo3-200.png' alt='logo'>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/project/homepj.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="/project/mytravels.html">My Travels</a></li>
                     <li><a href="/project/planning.html">Planning</a></li>
-                    <li><a href="/project/tips.html">Tips</a></li>
+                    <li><a href="/project/gallery.html">Gallerys</a></li>
                     <li><a href="/project/suggestions.html">Suggestions</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>This is my Planning</h2>
-            <p>On this page, I would have how to schedule trips and how to save money for the trips. Just a planning outline (I’m still thinking about this page and how it would work.)</p>
+            <h2>Planning</h2>
+            Location: <input type='text' id='n'><br>
+            Hours: <input type='text' id='n'><br>
+            Days: <input type='text' id='n'><br>
+            Allowance: <input type='text' id='n'><br>
+            Things you Want to Do: <input type='text' id='n'><br>
+
+            <div class="planningbox">
+                <ul id='amusement'></ul>
+                <ul id='national'></ul>
+                <ul id='international'></ul>
+                <ul id='temples'></ul>
+                <ul id='things'></ul>
+            </div>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Index</a></li>
+                    <li><a href="/hw.html">Index</a></li>
                     <li><a href="/project/project-proposal.html">Template</a></li>
                 </ul>
                 &copy; 2017 Breena
             </nav>
+            <script src='project.js'></script>
         </footer>
     </body>
 </html>
