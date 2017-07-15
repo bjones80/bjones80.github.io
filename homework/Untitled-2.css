@@ -1,0 +1,425 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Handlee|Patrick+Hand|Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Gloria+Hallelujah|Indie+Flower|Lobster|Mogra|Righteous');
+
+/* boxing size main */
+* {
+box-sizing: border-box;
+}
+
+body{
+margin: 2px;
+}
+article,
+aside,
+footer,
+header,
+nav,
+div,
+main,
+figcaption,
+figure {
+display:block;
+}
+
+
+
+
+/* Header */
+h1{
+font-family: 'Patrick Hand SC', cursive;
+}
+
+h2,
+h3,
+h4 {
+font-family: 'Handlee', cursive;
+margin: 0;
+}
+
+h5,
+h6,
+p,
+li {
+font-family: 'Handlee', cursive;
+font-weight: bold;
+font-size: 24px;
+margin: 0;
+}
+
+header {
+background-color: #283018;
+}
+
+nav ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-around;
+list-style-type: none;
+background-color: #aa863a;
+margin: 0;
+}
+
+li a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+color: #f0eceb;
+margin: 0;
+}
+
+li a:hover {
+background-color: #f0eceb;
+color: black;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+margin: 0;
+}
+
+
+/* MAIN */
+main  {
+background-color: #729f98;
+background-size: cover;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+main img {
+width: 100%;
+}
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+background-color: #729f98;
+border: none;
+border-bottom: 2px solid #283018;
+}
+
+
+
+/* Home */
+
+/* TEMPLE */
+/* TEMPLE */
+/* Dropdown Button */
+.droptm {
+display: flex;
+background-color: #f0eceb;
+color: #000000;
+border: 7px solid black;
+padding: 20px;
+font-size: 22px;
+font-family: 'Lobster', cursive;
+border-radius: 12px;
+cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-temple {
+display: none;
+position: absolute;
+background-color: #283018;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+font-family: 'lobster', cursive;
+font-size: 20px;
+z-index: 1;
+border-radius: 12px;
+color: #C0B3A0;
+max-height: 10em;
+overflow: auto;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-temple a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #C0B3A0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-temple a:hover {
+background-color: #f0eceb;
+color: #000000;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.temple-container:hover .droptm {
+background-color: #aa863a;
+color: #C0B3A0;
+}
+.show {display:block;}
+
+/* THINGS */
+/* Dropdown Button */
+.dropth {
+display: flex;
+background-color: #f0eceb;
+color: #000000;
+border: 7px solid black;
+padding: 16px;
+font-size: 22px;
+font-family: 'Lobster', cursive;
+border-radius: 12px;
+cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-things {
+display: none;
+position: absolute;
+background-color: #283018;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+font-family: 'lobster', cursive;
+font-size: 20px;
+z-index: 1;
+border-radius: 12px;
+color: #C0B3A0;
+max-height: 10em;
+overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-things a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #C0B3A0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-things a:hover {
+background-color: #f0eceb;
+color: #000000;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.things-container:hover .dropth {
+background-color: #aa863a;
+color: #C0B3A0;
+}
+.show {display:block;}
+
+/* AMUSEMENT */
+/* AMUSEMENT */
+.dropam {
+display: flex;
+background-color: #f0eceb;
+color: #000000;
+border: 7px solid black;
+padding: 16px;
+font-size: 22px;
+font-family: 'Lobster', cursive;
+border-radius: 12px;
+cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-amusement {
+display: none;
+position: absolute;
+background-color: #283018;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+font-family: 'lobster', cursive;
+font-size: 20px;
+z-index: 1;
+border-radius: 12px;
+color: #C0B3A0;
+max-height: 10em;
+overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-amusement a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #C0B3A0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-amusement a:hover {
+background-color: #f0eceb;
+color: #000000;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.amusement-container:hover .dropam {
+background-color: #aa863a;
+color: #C0B3A0;
+}
+.show {display:block;}
+
+/* NATIONAL */
+/* NATIONAL */
+.dropna {
+display: flex;
+background-color: #f0eceb;
+color: #000000;
+border: 7px solid black;
+padding: 16px;
+font-size: 22px;
+font-family: 'Lobster', cursive;
+border-radius: 12px;
+cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-national {
+display: none;
+position: absolute;
+background-color: #283018;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+font-family: 'lobster', cursive;
+font-size: 20px;
+z-index: 1;
+border-radius: 12px;
+color: #C0B3A0;
+max-height: 10em;
+overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-national a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #C0B3A0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-national a:hover {
+background-color: #f0eceb;
+color: #000000;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.national-container:hover .dropna {
+background-color: #aa863a;
+color: #C0B3A0;
+}
+.show {display:block;}
+
+
+/* INTERNATIONAL */
+/* INTERNATIONAL */
+.dropin {
+display: flex;
+background-color: #f0eceb;
+color: #000000;
+border: 7px solid black;
+padding: 16px;
+font-size: 22px;
+font-family: 'Lobster', cursive;
+border-radius: 12px;
+cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-international {
+display: none;
+position: absolute;
+background-color: #283018;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+font-family: 'lobster', cursive;
+font-size: 20px;
+z-index: 1;
+border-radius: 12px;
+color: #C0B3A0;
+max-height: 10em;
+overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-international a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #C0B3A0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-international a:hover {
+background-color: #f0eceb;
+color: #000000;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.international-container:hover .dropin {
+background-color: #aa863a;
+color: #C0B3A0;
+}
+.show {display:block;}
+
+/*GALLERY page*/
+.listbox ul{
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+padding: 10px;
+list-style-type: none;
+}
+
+/* PLANNING page*/
+.planningbox ul{
+padding: 10px;
+padding-bottom: 2px;
+list-style-type: none;
+}
+
+/* MY TRAVELS */
+.travelbox ul{
+padding: 10px;
+padding-bottom: 2px;
+list-style-type: none;
+}
+
+/*.travelbox ul {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    flex-flow: wrap;*/
+
+/* SUGGESTIONS */
+/*
+.input {
+
+}
+*/
+
+/* MEDIA */
+
+@media (min-width: 400px) {
+main img {
+width: inherit;
+padding: 10px;
+}
+.listbox ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+main {
+display: flex;
+justify-content: flex-start;
+}
+.hidden{
+display: none;
+}
+}
+
+

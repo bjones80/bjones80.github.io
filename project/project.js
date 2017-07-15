@@ -241,7 +241,7 @@ function travels(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var cost_per_day = document.createElement('p');
@@ -271,7 +271,7 @@ function travels(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var cost = document.createElement('p');
@@ -301,7 +301,7 @@ function travels(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var date = document.createElement('p');
@@ -328,7 +328,7 @@ function travels(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var date = document.createElement('p');
             var description = document.createElement('p');
             //set src
@@ -375,7 +375,7 @@ function planning(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var cost_per_day = document.createElement('p');
@@ -402,7 +402,7 @@ function planning(){
             var listItem = document.createElement('li');
             //create img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var cost = document.createElement('p');
@@ -429,7 +429,7 @@ function planning(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var description = document.createElement('p');
             //set src
@@ -450,7 +450,7 @@ function planning(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var location = document.createElement('p');
             var hours = document.createElement('p');
             var description = document.createElement('p');
@@ -474,7 +474,7 @@ function planning(){
             var listItem = document.createElement('li');
             //creaate img
             //create description
-            var name = document.createElement('h2');
+            var name = document.createElement('h3');
             var description = document.createElement('p');
             //set src
             //append

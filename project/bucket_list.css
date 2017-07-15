@@ -30,11 +30,18 @@ h1{
     font-family: 'Patrick Hand SC', cursive;
 }
 
-h2,
+h2{
+    font-family: 'Patrick Hand SC', cursive;
+    width: 100%;
+    font-size: 35px;
+    margin: 10px;
+}
 h3,
 h4 {
     font-family: 'Handlee', cursive;
     margin: 0;
+    font-size: 35px;
+    margin: 10px;
 }
 
 h5,
@@ -44,7 +51,8 @@ li {
     font-family: 'Handlee', cursive;
     font-weight: bold;
     font-size: 24px;
-    margin: 0;
+    margin: 10px;
+
 }
 
 header {
@@ -64,7 +72,8 @@ nav ul {
 li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 8px 7px;
+    border-radius: 12px;
     text-decoration: none;
     color: #f0eceb;
     margin: 0;
@@ -121,6 +130,7 @@ input[type=text] {
     font-family: 'Lobster', cursive;
     border-radius: 12px;
     cursor: pointer;
+    margin: 10px;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-temple {
@@ -156,7 +166,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .temple-container:hover .droptm {
     background-color: #aa863a;
-    color: #C0B3A0;
+    color: #f0eceb;
 }
 .show {display:block;}
 
@@ -172,6 +182,7 @@ input[type=text] {
     font-family: 'Lobster', cursive;
     border-radius: 12px;
     cursor: pointer;
+    margin: 10px;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-things {
@@ -206,7 +217,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .things-container:hover .dropth {
     background-color: #aa863a;
-    color: #C0B3A0;
+    color: #f0eceb;
 }
 .show {display:block;}
 
@@ -222,6 +233,7 @@ input[type=text] {
     font-family: 'Lobster', cursive;
     border-radius: 12px;
     cursor: pointer;
+    margin: 10px;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-amusement {
@@ -256,7 +268,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .amusement-container:hover .dropam {
     background-color: #aa863a;
-    color: #C0B3A0;
+    color: #f0eceb;
 }
 .show {display:block;}
 
@@ -272,6 +284,7 @@ input[type=text] {
     font-family: 'Lobster', cursive;
     border-radius: 12px;
     cursor: pointer;
+    margin: 10px;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-national {
@@ -306,7 +319,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .national-container:hover .dropna {
     background-color: #aa863a;
-    color: #C0B3A0;
+    color: #f0eceb;
 }
 .show {display:block;}
 
@@ -323,6 +336,7 @@ input[type=text] {
     font-family: 'Lobster', cursive;
     border-radius: 12px;
     cursor: pointer;
+    margin: 10px;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-international {
@@ -357,18 +371,9 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .international-container:hover .dropin {
     background-color: #aa863a;
-    color: #C0B3A0;
+    color: #f0eceb;
 }
 .show {display:block;}
-
-
-
-/* Change color of dropdown links on hover */
-.dropdown-international a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
 
 /*GALLERY page*/
 .listbox ul{
@@ -380,6 +385,12 @@ input[type=text] {
 }
 
 /* PLANNING page*/
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
 .planningbox ul{
     padding: 10px;
     padding-bottom: 2px;
@@ -421,13 +432,6 @@ input[type=text] {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    main {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .hidden{
-        display: none;
     }
 }
 
